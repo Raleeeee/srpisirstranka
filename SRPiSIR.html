@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranka SRP i SIR</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFEB3B; /* Žuta pozadina */
+            color: #333;
+        }
+        header {
+            background-color: #FFC107; /* Srednje žuta za header */
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #FF9800; /* Tamnija žuta za navigaciju */
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #FF5722; /* Narančasta hover boja */
+        }
+
+        /* Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            background-color: #FFF9C4; /* Svijetla žuta pozadina za sekcije */
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #FF9800; /* Naglasak na naslovima */
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        p, li {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 5px 0;
+        }
+
+        /* Contact form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin: 10px 0 5px;
+        }
+        .contact-form input, .contact-form textarea, .contact-form button {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #FF9800;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #FF5722;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #FF9800;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                padding: 10px;
+                margin: 0 5px;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Dobrodošli na stranicu SRP i SIR</h1>
+    <p>Za pravednu, održivu i naprednu Hrvatsku!</p>
+</header>
+
+<nav>
+    <a href="#misija">Misija</a>
+    <a href="#vizija">Vizija</a>
+    <a href="#ciljevi">Ciljevi</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<div class="container">
+
+    <section id="misija">
+        <h2>Naša Misija</h2>
+        <p>Naša misija je izgraditi Hrvatsku koja je pravedna, uključiva i prosperitetna. Zalažemo se za održivi razvoj, jednakost svih građana i transparentnu vlast koja odgovara građanima.</p>
+    </section>
+
+    <section id="vizija">
+        <h2>Naša Vizija</h2>
+        <p>Želimo stvoriti društvo u kojem će svaki građanin imati jednake šanse za napredak. Naša vizija uključuje modernizaciju infrastrukture, borbu protiv korupcije i jačanje socijalne pravde.</p>
+    </section>
+
+    <section id="ciljevi">
+        <h2>Naši Ciljevi</h2>
+        <ul>
+            <li>Sniziti cijene osnovnih životnih namirnica i usluga.</li>
+            <li>Osigurati jednakost među ljudima bez obzira na vjeru, rasu ili imanje.</li>
+            <li>Povećati plaće i radna prava za bolji životni standard.</li>
+            <li>Osigurati održivi razvoj kroz zelenu energiju i inovacije.</li>
+        </ul>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontaktirajte Nas</h2>
+        <form class="contact-form">
+            <label for="name">Ime i Prezime:</label>
+            <input type="text" id="name" name="name" placeholder="Vaše ime i prezime" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Vaša e-mail adresa" required>
+
+            <label for="message">Poruka:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Vaša poruka..." required></textarea>
+
+            <button type="submit">Pošalji</button>
+        </form>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Stranka SRP i SIR. Sva prava pridržana.</p>
+</footer>
+
+</body>
+</html>
